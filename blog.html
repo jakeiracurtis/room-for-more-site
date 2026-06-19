@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Room — stories from the community, updates from the movement, and resources for the journey. Room For More's blog.">
+  <title>The Room — Room For More</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .blog-cats {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .blog-cat-btn {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 8px 16px;
+      border: 1px solid var(--border-mid);
+      border-radius: var(--radius-sm);
+      color: var(--text-muted);
+      background: transparent;
+      cursor: pointer;
+      transition: border-color 0.15s, color 0.15s, background 0.15s;
+    }
+    .blog-cat-btn:hover,
+    .blog-cat-btn.active {
+      border-color: var(--orange);
+      color: var(--orange);
+      background: rgba(225,135,38,0.06);
+    }
+    .coming-soon-notice {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--teal);
+      border-radius: var(--radius-sm);
+      padding: 20px 24px;
+      margin-bottom: 48px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+    .coming-soon-notice span { font-size: 20px; }
+    .coming-soon-notice p { font-size: 14px; margin: 0; }
+    .coming-soon-notice p strong { color: var(--teal); font-weight: 600; }
+  </style>
+</head>
+<body data-page="blog">
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" aria-label="Page header">
+    <div class="container">
+      <span class="eyebrow">The Room</span>
+      <h1>Stories.<br>Updates.<br>Resources.</h1>
+      <p>From the community. About the movement. For the journey. This is Room For More — in our own words.</p>
+
+      <div class="blog-cats" role="list" aria-label="Blog categories">
+        <button class="blog-cat-btn active" role="listitem">All</button>
+        <button class="blog-cat-btn" role="listitem">Youth Stories</button>
+        <button class="blog-cat-btn" role="listitem">Program Recaps</button>
+        <button class="blog-cat-btn" role="listitem">Community Updates</button>
+        <button class="blog-cat-btn" role="listitem">Founder's Notes</button>
+        <button class="blog-cat-btn" role="listitem">Resources</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- BLOG CONTENT -->
+  <section class="section" aria-labelledby="blog-heading">
+    <div class="container">
+
+      <div class="coming-soon-notice" role="note" aria-label="Coming soon notice">
+        <span aria-hidden="true">✦</span>
+        <p><strong>New stories are on the way.</strong> We're documenting the movement — program recaps, youth spotlights, founder updates, and community resources will live here. Check back soon or subscribe below to be the first to know.</p>
+      </div>
+
+      <!-- FEATURED POST PLACEHOLDER -->
+      <h2 id="blog-heading" class="eyebrow" style="font-size:11px;margin-bottom:16px;">Featured</h2>
+      <div class="blog-featured" aria-label="Featured post">
+        <div class="blog-featured__img" aria-hidden="true">✦</div>
+        <div class="blog-featured__body">
+          <div class="blog-featured__cat">Founder's Notes</div>
+          <h2>Why Room For More Exists — And What We're Building in Richmond</h2>
+          <p>The story behind the mission, the city that inspired it, and the young people who make this work matter.</p>
+          <a href="#" class="btn btn--orange" style="pointer-events:none;opacity:0.5;">Coming Soon</a>
+        </div>
+      </div>
+
+      <!-- POST GRID PLACEHOLDERS -->
+      <h2 class="eyebrow" style="font-size:11px;margin-top:64px;margin-bottom:0;">Recent Posts</h2>
+      <div class="blog-grid" role="list">
+        <article class="blog-card" role="listitem">
+          <div class="blog-card__img" aria-hidden="true" style="background:rgba(83,150,138,0.15);">💼</div>
+          <div class="blog-card__body">
+            <div class="blog-card__cat">Program Recaps</div>
+            <h3>Career Exploration: Opening Doors Across Richmond Industries</h3>
+            <p>What happens when young people walk into professional spaces for the first time — and see themselves there.</p>
+          </div>
+        </article>
+        <article class="blog-card" role="listitem">
+          <div class="blog-card__img" aria-hidden="true" style="background:rgba(225,135,38,0.12);">💡</div>
+          <div class="blog-card__body">
+            <div class="blog-card__cat">Youth Stories</div>
+            <h3>From the Classroom to the Pitch: One Student's Entrepreneurship Journey</h3>
+            <p>A spotlight on what it looks like when a young person discovers they have something to build.</p>
+          </div>
+        </article>
+        <article class="blog-card" role="listitem">
+          <div class="blog-card__img" aria-hidden="true" style="background:rgba(156,207,147,0.15);">🌱</div>
+          <div class="blog-card__body">
+            <div class="blog-card__cat">Resources</div>
+            <h3>10 Things Every High School Student Should Know Before Graduation</h3>
+            <p>Practical knowledge that schools often don't teach — from financial literacy to networking to knowing your worth.</p>
+          </div>
+        </article>
+        <article class="blog-card" role="listitem">
+          <div class="blog-card__img" aria-hidden="true" style="background:rgba(255,229,135,0.12);">🎨</div>
+          <div class="blog-card__body">
+            <div class="blog-card__cat">Community Updates</div>
+            <h3>Why Richmond Needs More Youth Development — The Data Behind Our Mission</h3>
+            <p>The numbers that drive our work and the community context that makes Room For More necessary.</p>
+          </div>
+        </article>
+        <article class="blog-card" role="listitem">
+          <div class="blog-card__img" aria-hidden="true" style="background:rgba(62,76,102,0.4);">🎓</div>
+          <div class="blog-card__body">
+            <div class="blog-card__cat">Resources</div>
+            <h3>Scholarship Guide: Finding Money for College When No One Showed You How</h3>
+            <p>A practical starting point for students and families navigating scholarship opportunities in Virginia.</p>
+          </div>
+        </article>
+        <article class="blog-card" role="listitem">
+          <div class="blog-card__img" aria-hidden="true" style="background:rgba(83,150,138,0.18);">✊</div>
+          <div class="blog-card__body">
+            <div class="blog-card__cat">Founder's Notes</div>
+            <h3>Building in Public: What Room For More Looks Like at This Stage</h3>
+            <p>An honest update on where we are, what we're building, and what's coming next.</p>
+          </div>
+        </article>
+      </div>
+
+      <p style="text-align:center;margin-top:48px;color:var(--text-faint);font-size:13px;">More posts coming soon. Subscribe below to be the first to know.</p>
+    </div>
+  </section>
+
+  <!-- EMAIL SIGNUP -->
+  <section class="email-signup" aria-label="Newsletter signup">
+    <div class="container">
+      <h3>Get new posts delivered to your inbox.</h3>
+      <p>Stories, resources, program updates, and opportunities from Room For More — straight to you.</p>
+      <form class="email-form" novalidate>
+        <input type="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn--orange">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
+  <script>
+    // Category filter buttons (visual only — real filtering requires backend)
+    document.querySelectorAll('.blog-cat-btn').forEach(btn => {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.blog-cat-btn').forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

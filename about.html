@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Room For More — our story, mission, values, and the team building this movement for youth of color in Greater Richmond, VA.">
+  <title>About — Room For More</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .story-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .story-pull {
+      font-family: var(--font-display);
+      font-size: clamp(22px, 3.5vw, 34px);
+      font-weight: 700;
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      color: var(--text-primary);
+      margin-bottom: 28px;
+    }
+    .story-pull span { color: var(--teal); }
+    .story-body p {
+      font-size: 16px;
+      line-height: 1.8;
+      margin-bottom: 20px;
+      color: var(--text-muted);
+    }
+    .mission-cards {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 16px;
+      margin-top: 48px;
+    }
+    .mission-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+    }
+    .mission-card__icon {
+      font-size: 28px;
+      margin-bottom: 16px;
+    }
+    .mission-card h3 { font-size:17px; margin-bottom:10px; }
+    .mission-card p  { font-size:14px; }
+
+    .pillars-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 40px;
+    }
+    .pillar-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 20px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+    }
+    .pillar-item__bar {
+      width: 3px;
+      height: 100%;
+      min-height: 48px;
+      border-radius: 2px;
+      flex-shrink: 0;
+    }
+    .pillar-item h4 { font-size:13px; letter-spacing:0.08em; margin-bottom:6px; }
+    .pillar-item p  { font-size:13px; }
+
+    @media (max-width:768px) {
+      .story-layout { grid-template-columns:1fr; gap:40px; }
+      .mission-cards { grid-template-columns:1fr; }
+      .pillars-list  { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body data-page="about">
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" aria-label="Page header">
+    <div class="container">
+      <span class="eyebrow">About Us</span>
+      <h1>We Exist to<br>Create Space.</h1>
+      <p>Room For More was built on a belief: young people of color deserve more — and they always have.</p>
+    </div>
+  </header>
+
+  <!-- OUR STORY -->
+  <section class="section" aria-labelledby="story-heading">
+    <div class="container">
+      <div class="story-layout">
+        <div>
+          <span class="eyebrow">Our Story</span>
+          <p class="story-pull">Not here to save anyone.<br><span>Here to open doors.</span></p>
+          <a href="programs.html" class="btn btn--orange" style="margin-top:8px;">See Our Programs</a>
+        </div>
+        <div class="story-body">
+          <p>Room For More was founded on the belief that possibility should never be limited by proximity or access. Young people of color in Greater Richmond are talented, driven, and full of potential — what they often lack is exposure to the worlds, careers, and opportunities that already exist for them.</p>
+          <p>We're a 501(c)(3) youth development nonprofit serving students in grades 6 through 12. Through workshops, career exploration experiences, mentorship, and creative development programs, we help young people see beyond what they've been shown — and believe in what they can become.</p>
+          <p>We don't believe in a single path. There is room for young people of color in classrooms, boardrooms, creative spaces, skilled trades, entrepreneurship, public service, and every future they can imagine. Our job is to make sure they know it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <!-- MISSION / VISION / VALUES -->
+  <section class="section" id="mission" style="background:var(--bg-surface);" aria-labelledby="mvv-heading">
+    <div class="container">
+      <span class="eyebrow">Mission, Vision &amp; Values</span>
+      <h2 id="mvv-heading">What We Stand For</h2>
+      <div class="mission-cards" role="list">
+        <div class="mission-card" role="listitem">
+          <div class="mission-card__icon" aria-hidden="true">🎯</div>
+          <h3>Mission</h3>
+          <p>Room For More empowers youth of color in grades 6–12 to realize their full potential by providing access to opportunities, resources, and experiences that expand what they believe is possible — academically, creatively, and professionally.</p>
+        </div>
+        <div class="mission-card" role="listitem">
+          <div class="mission-card__icon" aria-hidden="true">🌟</div>
+          <h3>Vision</h3>
+          <p>A Greater Richmond where every young person of color has the exposure, support, and access to build the future they deserve — and the belief that they belong in it.</p>
+        </div>
+        <div class="mission-card" role="listitem">
+          <div class="mission-card__icon" aria-hidden="true">🤝</div>
+          <h3>Approach</h3>
+          <p>We expose, empower, equip, and encourage. Never pity-based, always possibility-based. Youth should feel seen, capable, and supported — not saved.</p>
+        </div>
+      </div>
+
+      <div class="pillars-list" role="list">
+        <div class="pillar-item" role="listitem">
+          <div class="pillar-item__bar" style="background:var(--teal);"></div>
+          <div>
+            <h4 style="color:var(--teal);">Access</h4>
+            <p>Breaking down barriers to opportunities, information, and spaces that young people of color deserve to enter.</p>
+          </div>
+        </div>
+        <div class="pillar-item" role="listitem">
+          <div class="pillar-item__bar" style="background:var(--orange);"></div>
+          <div>
+            <h4 style="color:var(--orange);">Exposure</h4>
+            <p>Introducing youth to environments, careers, industries, and pathways they may not otherwise encounter.</p>
+          </div>
+        </div>
+        <div class="pillar-item" role="listitem">
+          <div class="pillar-item__bar" style="background:var(--green);"></div>
+          <div>
+            <h4 style="color:var(--green);">Empowerment</h4>
+            <p>Building confidence, self-belief, independence, and the courage to pursue more.</p>
+          </div>
+        </div>
+        <div class="pillar-item" role="listitem">
+          <div class="pillar-item__bar" style="background:var(--yellow);"></div>
+          <div>
+            <h4 style="color:var(--yellow);">Community</h4>
+            <p>Creating a support system rooted in mentorship, collaboration, guidance, and genuine care.</p>
+          </div>
+        </div>
+        <div class="pillar-item" role="listitem" style="grid-column:1/-1;">
+          <div class="pillar-item__bar" style="background:var(--navy);"></div>
+          <div>
+            <h4 style="color:#7a91c0;">Possibility</h4>
+            <p>Reinforcing that their dreams are valid, attainable, and worth pursuing — no matter where they're starting from.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <div class="quote-block">
+    <div class="container">
+      <blockquote>"Room For More exists to create space for young people of color everywhere — in classrooms, boardrooms, creative industries, and futures they haven't imagined yet."</blockquote>
+      <cite>— Room For More Mission</cite>
+    </div>
+  </div>
+
+  <!-- BOARD OF DIRECTORS -->
+  <section class="section" id="board" aria-labelledby="board-heading">
+    <div class="container">
+      <span class="eyebrow">Leadership</span>
+      <h2 id="board-heading">Board of Directors</h2>
+      <p style="margin-top:12px;max-width:520px;">Room For More is governed by a volunteer board of community leaders committed to our mission and the young people we serve.</p>
+      <div class="team-grid" role="list">
+        <div class="team-card" role="listitem">
+          <div class="team-avatar" style="background:var(--orange);">JC</div>
+          <h3>JaKeira Curtis</h3>
+          <div class="team-card__role">Board Chair</div>
+          <p>Cultural Brand Architect and founder of Room For More. Leads organizational strategy, vision, and community partnerships.</p>
+        </div>
+        <div class="team-card" role="listitem">
+          <div class="team-avatar" style="background:var(--teal);">JK</div>
+          <h3>Jenny Kayembe</h3>
+          <div class="team-card__role">Human Resources Director</div>
+          <p>Oversees volunteer management, onboarding systems, leadership development, and organizational culture.</p>
+        </div>
+        <div class="team-card" role="listitem">
+          <div class="team-avatar" style="background:var(--green);color:var(--bg-base);">KT</div>
+          <h3>Kennedy Thacker</h3>
+          <div class="team-card__role">Board Member</div>
+          <p>Contributes expertise in community engagement and youth development strategy.</p>
+        </div>
+        <div class="team-card" role="listitem">
+          <div class="team-avatar" style="background:var(--yellow);color:var(--bg-base);">WN</div>
+          <h3>Will Noel Jr.</h3>
+          <div class="team-card__role">Board Member</div>
+          <p>Supports organizational growth, programming strategy, and community partnerships.</p>
+        </div>
+        <div class="team-card" role="listitem">
+          <div class="team-avatar" style="background:var(--navy);">JJ</div>
+          <h3>Jordan Jackson</h3>
+          <div class="team-card__role">Board Member</div>
+          <p>Brings professional expertise to support the mission of expanding opportunities for youth of color.</p>
+        </div>
+        <div class="team-card" role="listitem">
+          <div class="team-avatar" style="background:var(--orange);">AJ</div>
+          <h3>Ashyah Johnson</h3>
+          <div class="team-card__role">Board Member</div>
+          <p>Supports program development and community outreach for Room For More's youth initiatives.</p>
+        </div>
+        <div class="team-card" role="listitem">
+          <div class="team-avatar" style="background:var(--teal);">JG</div>
+          <h3>Jason Gallardo Gonzalez</h3>
+          <div class="team-card__role">Board Member</div>
+          <p>Contributes expertise and community perspective to advance the organization's mission.</p>
+        </div>
+        <div class="team-card" role="listitem">
+          <div class="team-avatar" style="background:var(--green);color:var(--bg-base);">CK</div>
+          <h3>Colby Kynard</h3>
+          <div class="team-card__role">Communications Chair</div>
+          <p>Leads public relations, media outreach, and storytelling to amplify Room For More's community impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN CTA -->
+  <div class="cta-strip">
+    <div class="container">
+      <h2>Join the movement.</h2>
+      <p>There are many ways to be part of what Room For More is building in Richmond. Your skills, time, and support matter.</p>
+      <div class="btn-row">
+        <a href="get-involved.html" class="btn btn--dark">Get Involved</a>
+        <a href="donate.html" class="btn btn--outline-dark">Support Our Work</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="email-signup">
+    <div class="container">
+      <h3>Stay connected to the movement.</h3>
+      <p>Get updates on programs, events, and opportunities from Room For More.</p>
+      <form class="email-form" novalidate>
+        <input type="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn--orange">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
+</body>
+</html>

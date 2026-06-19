@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Donate to Room For More and create more room for young people of color in Greater Richmond, VA. Every dollar expands access, exposure, and opportunity.">
+  <title>Donate — Room For More</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .donate-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .donate-left h2 { margin-bottom: 20px; }
+    .donate-left p { font-size:16px; line-height:1.8; margin-bottom:20px; }
+    .impact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-top: 36px;
+    }
+    .impact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 18px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+    }
+    .impact-item__amount {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--orange);
+      white-space: nowrap;
+      min-width: 52px;
+      flex-shrink: 0;
+    }
+    .impact-item p { font-size:14px; margin:0; }
+    .custom-amount-wrap {
+      margin-top: 12px;
+      position: relative;
+    }
+    .custom-amount-wrap .currency-symbol {
+      position: absolute;
+      left: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-muted);
+    }
+    .custom-amount-input {
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-mid);
+      border-radius: var(--radius-sm);
+      color: var(--text-primary);
+      font-family: var(--font-display);
+      font-size: 22px;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      padding: 16px 16px 16px 40px;
+      outline: none;
+      transition: border-color 0.15s;
+    }
+    .custom-amount-input:focus { border-color: var(--orange); }
+    .tax-note {
+      font-size: 12px;
+      color: var(--text-faint);
+      margin-top: 16px;
+      line-height: 1.6;
+    }
+    .tax-note a { color: var(--teal); text-decoration: underline; }
+    .frequency-toggle {
+      display: flex;
+      gap: 0;
+      background: var(--bg-card);
+      border: 1px solid var(--border-mid);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      margin-bottom: 28px;
+    }
+    .freq-btn {
+      flex: 1;
+      padding: 12px;
+      font-family: var(--font-display);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      transition: background 0.15s, color 0.15s;
+    }
+    .freq-btn.active {
+      background: var(--orange);
+      color: #fff;
+    }
+    .form-section-label {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin: 28px 0 16px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid var(--border);
+    }
+    @media (max-width:900px) {
+      .donate-layout { grid-template-columns:1fr; gap:48px; }
+    }
+  </style>
+</head>
+<body data-page="donate">
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" style="background:var(--bg-base);" aria-label="Page header">
+    <div class="container">
+      <span class="eyebrow">Donate</span>
+      <h1>Create<br><span style="color:var(--yellow);">More</span><br>Room.</h1>
+      <p>Your support gives young people in Greater Richmond access to the workshops, experiences, and opportunities that expand what they believe is possible for their future.</p>
+    </div>
+  </header>
+
+  <!-- DONATE SECTION -->
+  <section class="section" aria-labelledby="donate-heading">
+    <div class="container">
+      <div class="donate-layout">
+
+        <!-- LEFT: WHY IT MATTERS -->
+        <div class="donate-left">
+          <span class="eyebrow">Why It Matters</span>
+          <h2 id="donate-heading">Every dollar creates more access.</h2>
+          <p>Room For More runs on community support. Every contribution — no matter the size — directly funds the programs, experiences, and resources that help young people of color in Richmond see, believe, and become more.</p>
+          <p>We are not an afterschool program. We are a movement — creating exposure experiences, workshops, career panels, and mentorship opportunities that expand what young people believe is possible for their futures.</p>
+
+          <div class="impact-list" role="list" aria-label="Donation impact examples">
+            <div class="impact-item" role="listitem">
+              <div class="impact-item__amount">$25</div>
+              <p>Covers workshop materials for a youth development session.</p>
+            </div>
+            <div class="impact-item" role="listitem">
+              <div class="impact-item__amount">$50</div>
+              <p>Funds one student's participation in a career exploration experience.</p>
+            </div>
+            <div class="impact-item" role="listitem">
+              <div class="impact-item__amount">$100</div>
+              <p>Supports one month of programming resources and supplies.</p>
+            </div>
+            <div class="impact-item" role="listitem">
+              <div class="impact-item__amount">$250</div>
+              <p>Sponsors a student for a full Room For More program experience.</p>
+            </div>
+            <div class="impact-item" role="listitem">
+              <div class="impact-item__amount">$500+</div>
+              <p>Helps build and launch new programs that reach more students across Richmond.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT: DONATION FORM -->
+        <div>
+          <div class="donate-form" role="form" aria-label="Donation form">
+            <p style="font-size:13px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:var(--text-faint);margin-bottom:12px;">Frequency</p>
+            <div class="frequency-toggle" role="group" aria-label="Donation frequency">
+              <button class="freq-btn active" id="freq-one">One-Time</button>
+              <button class="freq-btn" id="freq-monthly">Monthly</button>
+            </div>
+
+            <p style="font-size:13px;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;color:var(--text-faint);margin-bottom:12px;">Select an Amount</p>
+            <div class="donate-tiers" style="grid-template-columns:repeat(2,1fr);margin-top:0;margin-bottom:0;" role="radiogroup" aria-label="Donation amount">
+              <div class="tier-card" data-amount="25" role="radio" tabindex="0">
+                <div class="tier-card__amount">$25</div>
+                <div class="tier-card__label">Workshop materials</div>
+              </div>
+              <div class="tier-card active" data-amount="50" role="radio" tabindex="0">
+                <div class="tier-card__amount">$50</div>
+                <div class="tier-card__label">Career experience</div>
+              </div>
+              <div class="tier-card" data-amount="100" role="radio" tabindex="0">
+                <div class="tier-card__amount">$100</div>
+                <div class="tier-card__label">Monthly resources</div>
+              </div>
+              <div class="tier-card" data-amount="250" role="radio" tabindex="0">
+                <div class="tier-card__amount">$250</div>
+                <div class="tier-card__label">Full program sponsor</div>
+              </div>
+            </div>
+
+            <div class="custom-amount-wrap" style="margin-top:12px;margin-bottom:24px;">
+              <span class="currency-symbol">$</span>
+              <input class="custom-amount-input" id="donation-amount" type="number" placeholder="Other amount" min="1" aria-label="Custom donation amount">
+            </div>
+
+            <div class="form-section-label">Your Information</div>
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="d-first">First Name</label>
+                <input class="form-input" type="text" id="d-first" placeholder="First name" autocomplete="given-name">
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="d-last">Last Name</label>
+                <input class="form-input" type="text" id="d-last" placeholder="Last name" autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-field">
+              <label class="form-label" for="d-email">Email Address</label>
+              <input class="form-input" type="email" id="d-email" placeholder="your@email.com" autocomplete="email">
+            </div>
+
+            <div class="form-section-label">Payment</div>
+            <div class="form-field">
+              <label class="form-label" for="d-card">Card Number</label>
+              <input class="form-input" type="text" id="d-card" placeholder="•••• •••• •••• ••••" maxlength="19" autocomplete="cc-number">
+            </div>
+            <div class="form-row">
+              <div class="form-field">
+                <label class="form-label" for="d-exp">Expiration</label>
+                <input class="form-input" type="text" id="d-exp" placeholder="MM / YY" maxlength="7" autocomplete="cc-exp">
+              </div>
+              <div class="form-field">
+                <label class="form-label" for="d-cvv">CVV</label>
+                <input class="form-input" type="text" id="d-cvv" placeholder="•••" maxlength="4" autocomplete="cc-csc">
+              </div>
+            </div>
+
+            <button type="button" class="btn btn--orange" style="width:100%;justify-content:center;padding:16px;font-size:13px;margin-top:8px;" id="donate-submit">
+              Donate Now &rarr;
+            </button>
+
+            <p class="tax-note">
+              🔒 Room For More is a registered 501(c)(3) nonprofit organization. Your donation is tax-deductible to the extent permitted by law. A receipt will be sent to the email address you provide. Questions? <a href="mailto:info@roomformore.org">info@roomformore.org</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <div class="quote-block">
+    <div class="container">
+      <blockquote>"Your donation helps create room for more access, exposure, and opportunity for young people of color in Greater Richmond."</blockquote>
+      <cite>— Room For More</cite>
+    </div>
+  </div>
+
+  <!-- OTHER WAYS TO GIVE -->
+  <section class="section" style="background:var(--bg-surface);border-top:1px solid var(--border);" aria-labelledby="other-ways-heading">
+    <div class="container">
+      <span class="eyebrow">Other Ways to Give</span>
+      <h2 id="other-ways-heading">More ways to support<br>the mission.</h2>
+      <div class="involve-grid" role="list" style="margin-top:40px;">
+        <div class="involve-card" role="listitem">
+          <div class="involve-card__icon" aria-hidden="true">🏢</div>
+          <h3>Corporate Giving</h3>
+          <p>Many employers match charitable donations. Check if your company has a matching gift program and double your impact.</p>
+        </div>
+        <div class="involve-card" role="listitem">
+          <div class="involve-card__icon" aria-hidden="true">📦</div>
+          <h3>In-Kind Support</h3>
+          <p>Donate supplies, equipment, professional services, or event space to directly support our programs.</p>
+          <a href="get-involved.html#contact" class="btn btn--ghost" style="margin-top:16px;font-size:11px;padding:10px 18px;">Contact Us</a>
+        </div>
+        <div class="involve-card" role="listitem">
+          <div class="involve-card__icon" aria-hidden="true">📣</div>
+          <h3>Spread the Word</h3>
+          <p>Share Room For More with your network. Every conversation creates more visibility — and more possibility for our youth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="email-signup">
+    <div class="container">
+      <h3>Stay connected to the movement.</h3>
+      <p>Get updates on programs, events, and opportunities from Room For More.</p>
+      <form class="email-form" novalidate>
+        <input type="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn--orange">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
+  <script>
+    // Frequency toggle
+    const freqBtns = document.querySelectorAll('.freq-btn');
+    freqBtns.forEach(btn => {
+      btn.addEventListener('click', function() {
+        freqBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+      });
+    });
+
+    // Card number formatting
+    const cardInput = document.getElementById('d-card');
+    if (cardInput) {
+      cardInput.addEventListener('input', function() {
+        let v = this.value.replace(/\D/g,'').substring(0,16);
+        this.value = v.replace(/(.{4})/g,'$1 ').trim();
+      });
+    }
+
+    // Expiry formatting
+    const expInput = document.getElementById('d-exp');
+    if (expInput) {
+      expInput.addEventListener('input', function() {
+        let v = this.value.replace(/\D/g,'').substring(0,4);
+        if (v.length >= 2) v = v.substring(0,2) + ' / ' + v.substring(2);
+        this.value = v;
+      });
+    }
+
+    // Donate submit (placeholder)
+    const donateBtn = document.getElementById('donate-submit');
+    if (donateBtn) {
+      donateBtn.addEventListener('click', function() {
+        this.textContent = 'Processing...';
+        this.disabled = true;
+        setTimeout(() => {
+          this.textContent = 'Thank You ✦';
+          this.style.background = 'var(--teal)';
+        }, 1500);
+      });
+    }
+  </script>
+</body>
+</html>

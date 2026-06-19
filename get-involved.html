@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get involved with Room For More — volunteer, mentor, or partner with us to create more space for young people of color in Greater Richmond, VA.">
+  <title>Get Involved — Room For More</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .involve-page-section {
+      padding: 80px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .involve-page-section:last-of-type { border-bottom: none; }
+    .involve-page-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: start;
+    }
+    .involve-page-text h2 { margin-bottom: 16px; }
+    .involve-page-text p { font-size:16px; line-height:1.8; margin-bottom:20px; }
+    .involve-items { display: flex; flex-direction: column; gap: 14px; }
+    .benefit-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 18px 20px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+    }
+    .benefit-item__icon { font-size:20px; flex-shrink:0; margin-top:2px; }
+    .benefit-item p { font-size:14px; margin:0; }
+    .partner-tiers {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 16px;
+      margin-top: 48px;
+    }
+    .partner-tier {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      text-align: center;
+    }
+    .partner-tier__level {
+      font-family: var(--font-display);
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    .partner-tier h3 { font-size:22px; margin-bottom:8px; }
+    .partner-tier p { font-size:13px; margin-bottom:20px; }
+    .partner-tier ul {
+      list-style: none;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+    .partner-tier li {
+      font-size: 13px;
+      color: var(--text-muted);
+      padding-left: 16px;
+      position: relative;
+    }
+    .partner-tier li::before {
+      content: '✦';
+      position: absolute;
+      left: 0;
+      font-size: 8px;
+      color: var(--teal);
+      top: 4px;
+    }
+    @media (max-width:768px) {
+      .involve-page-layout { grid-template-columns:1fr; gap:40px; }
+      .partner-tiers { grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+<body data-page="involved">
+  <div id="nav-placeholder"></div>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" aria-label="Page header">
+    <div class="container">
+      <span class="eyebrow">Get Involved</span>
+      <h1>There Is Room<br>For You Too.</h1>
+      <p>Room For More is a community-powered movement. The work we do for young people in Richmond depends on people like you showing up.</p>
+    </div>
+  </header>
+
+  <div id="ticker-placeholder"></div>
+
+  <!-- VOLUNTEER -->
+  <section class="involve-page-section" id="volunteer" aria-labelledby="volunteer-heading">
+    <div class="container">
+      <div class="involve-page-layout">
+        <div class="involve-page-text">
+          <span class="eyebrow">Volunteer</span>
+          <h2 id="volunteer-heading">Share your time.<br>Change a trajectory.</h2>
+          <p>Young people need to see possibility through people who look like them and have walked paths they can walk too. Your presence, skills, and story are powerful tools for youth development.</p>
+          <p>Room For More volunteers support workshops, events, career panels, and experiences that connect youth to a bigger world. No specific background required — just a commitment to showing up.</p>
+          <a href="#contact" class="btn btn--orange">Sign Up to Volunteer</a>
+        </div>
+        <div class="involve-items">
+          <div class="benefit-item">
+            <div class="benefit-item__icon" aria-hidden="true">🎤</div>
+            <p><strong style="color:var(--text-primary);">Career Panel Speaker</strong><br>Share your professional journey and answer questions from young people exploring different paths.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon" aria-hidden="true">🛠️</div>
+            <p><strong style="color:var(--text-primary);">Workshop Facilitator</strong><br>Lead skill-building sessions in your area of expertise — business, design, communication, finance, and more.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon" aria-hidden="true">📋</div>
+            <p><strong style="color:var(--text-primary);">Event Support</strong><br>Help plan and execute Room For More programs, workshops, and community events.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon" aria-hidden="true">📸</div>
+            <p><strong style="color:var(--text-primary);">Media & Documentation</strong><br>Capture the story of our programs through photography, video, or social content creation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENTOR -->
+  <section class="involve-page-section" id="mentor" style="background:var(--bg-surface);" aria-labelledby="mentor-heading">
+    <div class="container">
+      <div class="involve-page-layout">
+        <div class="involve-page-text">
+          <span class="eyebrow">Mentor</span>
+          <h2 id="mentor-heading">Guide a young person<br>toward their future.</h2>
+          <p>Mentorship is one of the most powerful investments you can make in a young person's life. A consistent, caring adult who believes in a student's potential can change what they believe is possible for themselves.</p>
+          <p>Room For More mentors connect with youth to offer guidance, encouragement, accountability, and real-world perspective. You don't have to have all the answers — you just have to show up.</p>
+          <a href="#contact" class="btn btn--orange">Apply to Mentor</a>
+        </div>
+        <div class="involve-items">
+          <div class="benefit-item">
+            <div class="benefit-item__icon" aria-hidden="true">📅</div>
+            <p><strong style="color:var(--text-primary);">Flexible Commitment</strong><br>Mentorship through Room For More is structured around our programs and events — not a daily requirement.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon" aria-hidden="true">🌐</div>
+            <p><strong style="color:var(--text-primary);">Every Background Welcome</strong><br>Whether you work in tech, trades, arts, healthcare, or entrepreneurship — your path matters to a student somewhere.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon" aria-hidden="true">📈</div>
+            <p><strong style="color:var(--text-primary);">Real Impact</strong><br>Research consistently shows that mentored youth are more likely to pursue higher education and career goals.</p>
+          </div>
+          <div class="benefit-item">
+            <div class="benefit-item__icon" aria-hidden="true">🤝</div>
+            <p><strong style="color:var(--text-primary);">Community Connection</strong><br>Join a network of mentors committed to investing in the next generation of Richmond's leaders.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTNER -->
+  <section class="involve-page-section" id="partner" aria-labelledby="partner-heading">
+    <div class="container">
+      <span class="eyebrow">Partner With Us</span>
+      <h2 id="partner-heading">Connect your organization<br>to the next generation.</h2>
+      <p style="font-size:16px;max-width:600px;margin-bottom:12px;">Room For More creates meaningful partnership opportunities for businesses, nonprofits, universities, and community organizations that want to invest in the development of youth of color in Greater Richmond.</p>
+      <p style="font-size:16px;max-width:600px;margin-bottom:40px;">Whether you're hosting an industry visit, sponsoring a program, or sending professionals to a career panel — your organization's participation creates more room for young people to imagine what's possible.</p>
+
+      <div class="partner-tiers" role="list">
+        <div class="partner-tier" role="listitem">
+          <div class="partner-tier__level" style="color:var(--teal);">Community Partner</div>
+          <h3>Engage</h3>
+          <p>Show up for our youth through participation and exposure opportunities.</p>
+          <ul>
+            <li>Career panel participation</li>
+            <li>Industry site visit hosting</li>
+            <li>Logo on event materials</li>
+            <li>Social media recognition</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" style="margin-top:24px;font-size:11px;padding:10px 18px;width:100%;justify-content:center;">Get Started</a>
+        </div>
+        <div class="partner-tier" role="listitem" style="border-color:var(--orange);">
+          <div class="partner-tier__level" style="color:var(--orange);">Program Sponsor</div>
+          <h3>Invest</h3>
+          <p>Directly fund programs and experiences that transform student trajectories.</p>
+          <ul>
+            <li>Program naming rights</li>
+            <li>Speaking opportunities</li>
+            <li>Direct youth engagement</li>
+            <li>Impact reports and updates</li>
+            <li>All Community Partner benefits</li>
+          </ul>
+          <a href="#contact" class="btn btn--orange" style="margin-top:24px;font-size:11px;padding:10px 18px;width:100%;justify-content:center;">Become a Sponsor</a>
+        </div>
+        <div class="partner-tier" role="listitem">
+          <div class="partner-tier__level" style="color:var(--green);">Mission Partner</div>
+          <h3>Lead</h3>
+          <p>Go deep with a long-term commitment to Room For More's work and growth.</p>
+          <ul>
+            <li>Annual partnership agreement</li>
+            <li>Co-branded programming</li>
+            <li>Board advisory opportunity</li>
+            <li>Priority talent pipeline access</li>
+            <li>All Sponsor benefits</li>
+          </ul>
+          <a href="#contact" class="btn btn--ghost" style="margin-top:24px;font-size:11px;padding:10px 18px;width:100%;justify-content:center;">Let's Connect</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT FORM -->
+  <section class="section" id="contact" style="background:var(--bg-surface);border-top:1px solid var(--border);" aria-labelledby="contact-heading">
+    <div class="container">
+      <span class="eyebrow">Contact</span>
+      <h2 id="contact-heading">Ready to get involved?<br>Let's talk.</h2>
+      <p style="margin-top:12px;margin-bottom:48px;max-width:500px;">Fill out the form below and a member of the Room For More team will be in touch within 3–5 business days.</p>
+
+      <div class="contact-form" style="max-width:640px;" role="form" aria-label="Get involved contact form">
+        <div class="form-row">
+          <div class="form-field">
+            <label class="form-label" for="first-name">First Name</label>
+            <input class="form-input" type="text" id="first-name" placeholder="First name" autocomplete="given-name">
+          </div>
+          <div class="form-field">
+            <label class="form-label" for="last-name">Last Name</label>
+            <input class="form-input" type="text" id="last-name" placeholder="Last name" autocomplete="family-name">
+          </div>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="contact-email">Email Address</label>
+          <input class="form-input" type="email" id="contact-email" placeholder="your@email.com" autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="org-name">Organization (if applicable)</label>
+          <input class="form-input" type="text" id="org-name" placeholder="Company or organization name">
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="interest">I'm interested in</label>
+          <select class="form-select" id="interest">
+            <option value="" disabled selected>Select an option</option>
+            <option>Volunteering</option>
+            <option>Mentoring</option>
+            <option>Community Partnership</option>
+            <option>Program Sponsorship</option>
+            <option>Mission Partnership</option>
+            <option>General Inquiry</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label class="form-label" for="message">Tell us more</label>
+          <textarea class="form-input" id="message" rows="4" placeholder="Share a little about yourself, your organization, or how you'd like to get involved..." style="resize:vertical;min-height:100px;"></textarea>
+        </div>
+        <button type="submit" class="btn btn--orange" style="width:100%;justify-content:center;">Send Message</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="email-signup">
+    <div class="container">
+      <h3>Stay connected to the movement.</h3>
+      <p>Get updates on programs, events, and opportunities from Room For More.</p>
+      <form class="email-form" novalidate>
+        <input type="email" placeholder="your@email.com" required aria-label="Email address">
+        <button type="submit" class="btn btn--orange">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <div id="footer-placeholder"></div>
+  <script src="shared.js"></script>
+</body>
+</html>
